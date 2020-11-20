@@ -1,6 +1,8 @@
 import { addPlant, usePlant } from './field.js';
 import { createPlan } from './plan.js'
 import { createAsparagus } from './seeds/asparagus.js'
+import { plantSeeds } from './tractor.js'
+
 
 //test harvest plan
 const yearlyPlan= createPlan();
@@ -16,3 +18,7 @@ seed = createAsparagus();
 const test = addPlant(seed);
 const test2 = usePlant();
 console.log(test, test2);
+
+//test sowing the seeds with your tractor 
+const sow = plantSeeds(createPlan());
+console.log(sow);
