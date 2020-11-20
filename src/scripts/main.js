@@ -1,4 +1,4 @@
-import { addPlant, usePlant } from './field.js';
+import { addPlant, usePlants } from './field.js';
 import { createPlan } from './plan.js'
 import { createAsparagus } from './seeds/asparagus.js'
 import { plantSeeds } from './tractor.js'
@@ -14,7 +14,7 @@ console.log(asparagusSeed);
 
 //test tilling the fields
 const test = addPlant(createAsparagus());
-const test2 = usePlant();
+const test2 = usePlants();
 console.log(test, test2);
 
 //test sowing the seeds with your tractor 
@@ -24,5 +24,5 @@ console.log(plantSeeds(createPlan()));
 
 
 //test collecting the harvest
-const plantsUsed = usePlant();
+const plantsUsed = usePlants();
 console.log(harvestPlants(plantsUsed));
