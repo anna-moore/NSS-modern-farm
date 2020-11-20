@@ -9,7 +9,7 @@ import { createWheat } from './seeds/wheat.js'
 //import addPlants from field.js
 import { addPlant } from './field.js'
 
-//take plan, create seed, place seed in soil
+//take plan, create seeds, place seeds in the soil
 export const plantSeeds = (plan) =>{
     for(let i =0; i< plan.length; i++ ){
         for(let j = 0; j < plan[i].length; j++){
