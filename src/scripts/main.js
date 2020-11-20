@@ -20,7 +20,7 @@ console.log(test, test2);
 //test sowing the seeds with your tractor 
 // const sow = plantSeeds(createPlan());
 // console.log(sow);
-console.log(plantSeeds(createPlan()));
+console.log(plantSeeds(yearlyPlan))
 
 
 //test collecting the harvest

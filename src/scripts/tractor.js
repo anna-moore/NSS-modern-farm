@@ -11,7 +11,7 @@ import { addPlant } from './field.js'
 
 //take plan, create seeds, place seeds in the soil
 export const plantSeeds = (plan) =>{
-    for(let i =0; i< plan.length; i++ ){
+    for(let i = 0; i < plan.length; i++ ){
         for(let j = 0; j < plan[i].length; j++){
             if(plan[i][j]=== "Asparagus"){
                 addPlant(createAsparagus());
