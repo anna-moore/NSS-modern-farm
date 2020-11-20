@@ -10,7 +10,7 @@ export const harvestPlants = (plant) =>{
         const output = plant[i].output;
         //only half of the corn is available for harvest (cattle ranchers)
         if(plant[i].type ==="Corn"){
-            for(let k=0; k < 3 ; k++){
+            for(let k=0; k < output/2 ; k++){
                 seedObjects.push(plant[i])
             }  
         //push the plant the value in output key     

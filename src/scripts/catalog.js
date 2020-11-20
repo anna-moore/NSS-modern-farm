@@ -1,9 +1,22 @@
-//
-export const Catalog= (harvest) =>{
-    for(let i =0; i<harvest.length; i++){
+//variables need work 
 
-        <secton class="plant">`harvest[i]`</secton>
+// function renders individual plant objects as HTML translator
+const food = (harvest )=>{
+
+    return `<section class="plant"> ${harvest.type} </section>`
+}
+
+//harvest is the array of harvested food items 
+export const Catalog= (harvest) =>{
+    //get reference to the <section class="container"> element
+    const contentElement = document.querySelector(".container")
+
+    for(let item of harvest){
+        const foodHTML = food(item)
+        contentElement.innerHTML +=foodHTML
+        
     }
 
 }
-const contentElement = document.querySelector(".fishList")
+
+

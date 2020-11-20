@@ -2,7 +2,7 @@
 
 /*Typography
 --------------------------------------------------------------*/
-body,
+body{background-color: 	rgb(255,255,153);}
 button,
 input,
 select,
@@ -34,3 +34,22 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.container{
+    display: flex;
+    /* flex-flow: row wrap;
+    flex-grow: 10; */
+    flex-wrap:wrap;
+    flex-grow: 1;
+    flex-basis: 21%;
+    padding: 5px;
+    width: 75%;
+    margin: 10px;
+    border: 2px solid green;
+    justify-content: auto;
+}
+.plant{
+    padding: 5px;
+    border: 2px solid coral;
+    font-size: larger;
+    width: 15%;
+}
