@@ -3,6 +3,7 @@ import { createPlan } from './plan.js'
 import { createAsparagus } from './seeds/asparagus.js'
 import { plantSeeds } from './tractor.js'
 import { harvestPlants } from './harvester.js'
+import { Catalog } from './catalog.js'
 
 //test harvest plan
 const yearlyPlan= createPlan();
@@ -26,3 +27,7 @@ console.log(plantSeeds(yearlyPlan))
 //test collecting the harvest
 const plantsUsed = usePlant();
 console.log(harvestPlants(plantsUsed));
+
+//test for selling harvest online 
+let selling =Catalog(harvestPlants(plantsUsed));
+console.log(selling);
