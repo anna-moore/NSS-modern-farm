@@ -2,7 +2,7 @@
 export const Catalog= (harvest) =>{
     for(let i =0; i<harvest.length; i++){
 
-        <secton class="plant">`</secton>
+        <secton class="plant">`harvest[i]`</secton>
     }
 
 }
