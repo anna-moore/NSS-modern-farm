@@ -1,17 +1,19 @@
+//array of crop options
 const types = ["Soybean", "Corn", "Asparagus", "Wheat", "Potato", "Sunflower"]
 
+//fill the array/land? (3 rows each with 6 sections) with crops
 export const createPlan = () => {
     const plan = []
 
     for (let index = 0; index < 3; index++) {
         const row = []
         for (let j = 0; j < 6; j++) {
-            row.push(crop.next().value)
+            row.push(crop.next().value);
         }
-        plan.push(row)
+        plan.push(row);
     }
 
-    return plan
+    return plan;
 }
 
 
@@ -25,7 +27,7 @@ export const createPlan = () => {
 */
 const crop = function* () {
     while (true) {
-        const typeIdx = Math.floor(Math.random() * types.length)
+        const typeIdx = Math.floor(Math.random() * types.length);
         yield types[typeIdx]
     }
 }()
