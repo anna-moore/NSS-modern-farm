@@ -1,11 +1,11 @@
 //function creating a seed
 export const createSunflower =() =>{
-    const seed = [
+    const seed = 
         {
             type: "Sunflower",
             height:380,
-            output: 3
+            output:3
         }
-    ];
+    
     return seed;
 }

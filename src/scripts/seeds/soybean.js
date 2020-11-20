@@ -1,11 +1,11 @@
 //function creating a seed
 export const createSoybean =() =>{
-    const seed = [
+    const seed = 
         {
             type: "Soybean",
             height:20,
-            output: 4
+            output:4
         }
-    ];
+    
     return seed;
 }

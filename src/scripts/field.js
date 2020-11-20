@@ -14,7 +14,7 @@ export const addPlant = (seed) =>{
 }
 
 //export copy of growingPlants array
-export const usePlant = () =>{
+export const usePlants = () =>{
     return growingPlants.slice();
 
 }
