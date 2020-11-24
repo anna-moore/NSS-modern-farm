@@ -21,5 +21,6 @@ export const harvestPlants = (plant) =>{
         }         
     } 
     //return the filled array
+    seedObjects.sort();
     return seedObjects;
 }

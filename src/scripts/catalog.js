@@ -1,9 +1,7 @@
-//variables need work 
-
 // function renders individual plant objects as HTML translator
 const food = (harvest )=>{
 
-    return `<section class="plant"> ${harvest.type} </section>`
+    return `<section class="plant"> ${harvest.icon} </section>`
 }
 
 //harvest is the array of harvested food items 

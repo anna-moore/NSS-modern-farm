@@ -45,11 +45,11 @@ h1,h2,h3,h4,h5,h6 {
     width: 75%;
     margin: 10px;
     border: 2px solid green;
-    justify-content: auto;
+    align-content: right;
 }
 .plant{
     padding: 5px;
-    border: 2px solid coral;
+    /* border: 2px solid coral; */
     font-size: larger;
     width: 15%;
 }
