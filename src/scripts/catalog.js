@@ -9,11 +9,12 @@ export const Catalog= (harvest) =>{
     //get reference to the <section class="container"> element
     const contentElement = document.querySelector(".container")
 
-    for(let item of harvest){
-        const foodHTML = food(item)
-        contentElement.innerHTML +=foodHTML
-        
-    }
+    //refactor with map() instead of for .. of
+    contentElement.innerHTML += 
+        // `<article class= "harvest">
+         ` ${harvest.map(item => food(item)).join("")}`
+    //     </article>`
+
 
 }
 
